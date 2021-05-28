@@ -66,7 +66,11 @@ addToShoppingList(cheese)
 addToShoppingList(potato)
 addToShoppingList(onion)
 
-
-console.log(food)
+for (const eater of food) {
+    if (eater.price > 8) {
+        console.log(`Your pricer item is ${eater.name}
+        with a price of ${eater.price} USD`)
+    }
+}
 
 /* console.log(food.length) */ // this was an experiment
